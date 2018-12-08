@@ -1,0 +1,2010 @@
+{
+    "https://api.nytimes.com/svc/books/v3/lists.jsonapi-key-e2f12384cb874605bf274292786f601f_list-combined-print-and-e-book-fiction": {
+        "copyright": "Copyright (c) 2018 The New York Times Company.  All Rights Reserved.",
+        "last_modified": "2018-11-28T23:38:01-05:00",
+        "num_results": 15,
+        "results": [
+            {
+                "amazon_product_url": "https://www.amazon.com/Fire-Blood-Thrones-Targaryen-History/dp/152479628X?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-24",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "George RR Martin",
+                        "contributor": "by George R.R. Martin",
+                        "contributor_note": "",
+                        "description": "Set 300 years before the events of \u201cA Game of Thrones,\u201d this is the first volume of the two-part history of the Targaryens in Westeros.",
+                        "price": 0,
+                        "primary_isbn10": "152479628X",
+                        "primary_isbn13": "9781524796280",
+                        "publisher": "Bantam",
+                        "title": "FIRE AND BLOOD"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Combined Print & E-Book Fiction",
+                "isbns": [
+                    {
+                        "isbn10": "152479628X",
+                        "isbn13": "9781524796280"
+                    },
+                    {
+                        "isbn10": "1524796298",
+                        "isbn13": "9781524796297"
+                    }
+                ],
+                "list_name": "Combined Print and E-Book Fiction",
+                "published_date": "2018-12-09",
+                "rank": 1,
+                "rank_last_week": 0,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 1
+            },
+            {
+                "amazon_product_url": "https://www.amazon.com/Target-Alex-Cross-James-Patterson-ebook/dp/B07C4Q7JX8?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-24",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "James Patterson",
+                        "contributor": "by James Patterson",
+                        "contributor_note": "",
+                        "description": "Alex Cross returns for the 26th book in the series bearing his name.",
+                        "price": 0,
+                        "primary_isbn10": "0316417505",
+                        "primary_isbn13": "9780316417501",
+                        "publisher": "Little, Brown",
+                        "title": "TARGET: ALEX CROSS"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Combined Print & E-Book Fiction",
+                "isbns": [
+                    {
+                        "isbn10": "0316273945",
+                        "isbn13": "9780316273947"
+                    },
+                    {
+                        "isbn10": "0316417505",
+                        "isbn13": "9780316417501"
+                    }
+                ],
+                "list_name": "Combined Print and E-Book Fiction",
+                "published_date": "2018-12-09",
+                "rank": 2,
+                "rank_last_week": 0,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 1
+            },
+            {
+                "amazon_product_url": "https://www.amazon.com/Reckoning-Novel-John-Grisham-ebook/dp/B079DBS447?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-24",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "John Grisham",
+                        "contributor": "by John Grisham",
+                        "contributor_note": "",
+                        "description": "A decorated World War II veteran shoots and kills a pastor inside a Mississippi church.",
+                        "price": 0,
+                        "primary_isbn10": "0385544154",
+                        "primary_isbn13": "9780385544153",
+                        "publisher": "Doubleday",
+                        "title": "THE RECKONING"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Combined Print & E-Book Fiction",
+                "isbns": [
+                    {
+                        "isbn10": "0385544154",
+                        "isbn13": "9780385544153"
+                    },
+                    {
+                        "isbn10": "0385544162",
+                        "isbn13": "9780385544160"
+                    },
+                    {
+                        "isbn10": "052563925X",
+                        "isbn13": "9780525639251"
+                    },
+                    {
+                        "isbn10": "0525639292",
+                        "isbn13": "9780525639299"
+                    },
+                    {
+                        "isbn10": "0385544170",
+                        "isbn13": "9780385544177"
+                    }
+                ],
+                "list_name": "Combined Print and E-Book Fiction",
+                "published_date": "2018-12-09",
+                "rank": 3,
+                "rank_last_week": 4,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 5
+            },
+            {
+                "amazon_product_url": "https://www.amazon.com/Sacred-Night-Ballard-Bosch-Novel-ebook/dp/B0796R3RR4?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-24",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Michael Connelly",
+                        "contributor": "by Michael Connelly",
+                        "contributor_note": "",
+                        "description": "Detective Ren\u00e9e Ballard teams up with the retired detective Harry Bosch, who is working on a cold case.",
+                        "price": 0,
+                        "primary_isbn10": "0316486671",
+                        "primary_isbn13": "9780316486675",
+                        "publisher": "Little, Brown",
+                        "title": "DARK SACRED NIGHT"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Combined Print & E-Book Fiction",
+                "isbns": [
+                    {
+                        "isbn10": "0316484806",
+                        "isbn13": "9780316484800"
+                    },
+                    {
+                        "isbn10": "031652672X",
+                        "isbn13": "9780316526722"
+                    },
+                    {
+                        "isbn10": "0316486671",
+                        "isbn13": "9780316486675"
+                    },
+                    {
+                        "isbn10": "1549142321",
+                        "isbn13": "9781549142321"
+                    },
+                    {
+                        "isbn10": "1549142305",
+                        "isbn13": "9781549142307"
+                    },
+                    {
+                        "isbn10": "1549121049",
+                        "isbn13": "9781549121043"
+                    },
+                    {
+                        "isbn10": "1549121057",
+                        "isbn13": "9781549121050"
+                    },
+                    {
+                        "isbn10": "1549142313",
+                        "isbn13": "9781549142314"
+                    }
+                ],
+                "list_name": "Combined Print and E-Book Fiction",
+                "published_date": "2018-12-09",
+                "rank": 4,
+                "rank_last_week": 6,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 4
+            },
+            {
+                "amazon_product_url": "https://www.amazon.com/Look-Alive-Twenty-Five-Stephanie-Novel-ebook/dp/B07B2JQHH8?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-24",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Janet Evanovich",
+                        "contributor": "by Janet Evanovich",
+                        "contributor_note": "",
+                        "description": "The 25th book in the Stephanie Plum series. When several managers of a deli in Trenton disappear, a bounty hunter and her detective boyfriend look for clues.",
+                        "price": 0,
+                        "primary_isbn10": "0399179224",
+                        "primary_isbn13": "9780399179228",
+                        "publisher": "Putnam",
+                        "title": "LOOK ALIVE TWENTY-FIVE"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Combined Print & E-Book Fiction",
+                "isbns": [
+                    {
+                        "isbn10": "0399179224",
+                        "isbn13": "9780399179228"
+                    },
+                    {
+                        "isbn10": "0399179232",
+                        "isbn13": "9780399179235"
+                    }
+                ],
+                "list_name": "Combined Print and E-Book Fiction",
+                "published_date": "2018-12-09",
+                "rank": 5,
+                "rank_last_week": 1,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 2
+            },
+            {
+                "amazon_product_url": "https://www.amazon.com/Past-Tense-Jack-Reacher-Novel/dp/0399593519?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-24",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Lee Child",
+                        "contributor": "by Lee Child",
+                        "contributor_note": "",
+                        "description": "Jack Reacher explores the New England town where his father was born and a Canadian couple now find themselves stranded.",
+                        "price": 0,
+                        "primary_isbn10": "0399593519",
+                        "primary_isbn13": "9780399593512",
+                        "publisher": "Delacorte",
+                        "title": "PAST TENSE"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Combined Print & E-Book Fiction",
+                "isbns": [
+                    {
+                        "isbn10": "",
+                        "isbn13": ""
+                    },
+                    {
+                        "isbn10": "0399593519",
+                        "isbn13": "9780399593512"
+                    },
+                    {
+                        "isbn10": "0399593527",
+                        "isbn13": "9780399593529"
+                    }
+                ],
+                "list_name": "Combined Print and E-Book Fiction",
+                "published_date": "2018-12-09",
+                "rank": 6,
+                "rank_last_week": 3,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 3
+            },
+            {
+                "amazon_product_url": "https://www.amazon.com/Every-Breath-Nicholas-Sparks/dp/1538728524?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-24",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Nicholas Sparks",
+                        "contributor": "by Nicholas Sparks",
+                        "contributor_note": "",
+                        "description": "Difficult choices surface when Hope Anderson and Tru Walls meet in a North Carolina seaside town.",
+                        "price": 0,
+                        "primary_isbn10": "1538728524",
+                        "primary_isbn13": "9781538728529",
+                        "publisher": "Grand Central",
+                        "title": "EVERY BREATH"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Combined Print & E-Book Fiction",
+                "isbns": [
+                    {
+                        "isbn10": "1538728524",
+                        "isbn13": "9781538728529"
+                    },
+                    {
+                        "isbn10": "1538715775",
+                        "isbn13": "9781538763995"
+                    },
+                    {
+                        "isbn10": "1538728532",
+                        "isbn13": "9781538728536"
+                    }
+                ],
+                "list_name": "Combined Print and E-Book Fiction",
+                "published_date": "2018-12-09",
+                "rank": 7,
+                "rank_last_week": 7,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 6
+            },
+            {
+                "amazon_product_url": "https://www.amazon.com/Long-Road-Mercy-Atlee-Pine/dp/1538761572?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-24",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "David Baldacci",
+                        "contributor": "by David Baldacci",
+                        "contributor_note": "",
+                        "description": "Atlee Pine, an F.B.I. agent who is haunted by the childhood kidnapping of her twin sister, must choose between protecting her career or the United States' democracy.",
+                        "price": 0,
+                        "primary_isbn10": "1538761572",
+                        "primary_isbn13": "9781538761571",
+                        "publisher": "Grand Central Publishing",
+                        "title": "LONG ROAD TO MERCY"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Combined Print & E-Book Fiction",
+                "isbns": [
+                    {
+                        "isbn10": "1538761572",
+                        "isbn13": "9781538761571"
+                    },
+                    {
+                        "isbn10": "1538714701",
+                        "isbn13": "9781538714706"
+                    }
+                ],
+                "list_name": "Combined Print and E-Book Fiction",
+                "published_date": "2018-12-09",
+                "rank": 8,
+                "rank_last_week": 2,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 2
+            },
+            {
+                "amazon_product_url": "https://www.amazon.com/Beauchamp-Hall-Novel-Danielle-Steel-ebook/dp/B07B77M8BZ?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-24",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Danielle Steel",
+                        "contributor": "by Danielle Steel",
+                        "contributor_note": "",
+                        "description": "Winona Farmington leaves behind the disappointments in her Michigan hometown to visit the English town where her favorite television show is filmed.",
+                        "price": 0,
+                        "primary_isbn10": "0399179305",
+                        "primary_isbn13": "9780399179303",
+                        "publisher": "Delacorte",
+                        "title": "BEAUCHAMP HALL"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Combined Print & E-Book Fiction",
+                "isbns": [
+                    {
+                        "isbn10": "0399179291",
+                        "isbn13": "9780399179297"
+                    },
+                    {
+                        "isbn10": "0399179305",
+                        "isbn13": "9780399179303"
+                    },
+                    {
+                        "isbn10": "1984827650",
+                        "isbn13": "9781984827654"
+                    }
+                ],
+                "list_name": "Combined Print and E-Book Fiction",
+                "published_date": "2018-12-09",
+                "rank": 9,
+                "rank_last_week": 0,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 1
+            },
+            {
+                "amazon_product_url": "https://www.amazon.com/Nine-Perfect-Strangers-Liane-Moriarty-ebook/dp/B07C75GRLY?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-24",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Liane Moriarty",
+                        "contributor": "by Liane Moriarty",
+                        "contributor_note": "",
+                        "description": "A romance writer becomes fascinated by the owner and director of a health resort.",
+                        "price": 0,
+                        "primary_isbn10": "1250069823",
+                        "primary_isbn13": "9781250069825",
+                        "publisher": "Flatiron",
+                        "title": "NINE PERFECT STRANGERS"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Combined Print & E-Book Fiction",
+                "isbns": [
+                    {
+                        "isbn10": "1250069823",
+                        "isbn13": "9781250069825"
+                    },
+                    {
+                        "isbn10": "125006984X",
+                        "isbn13": "9781250069849"
+                    }
+                ],
+                "list_name": "Combined Print and E-Book Fiction",
+                "published_date": "2018-12-09",
+                "rank": 10,
+                "rank_last_week": 5,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "https://www.nytimes.com/2018/11/21/books/review/liane-moriarty-nine-perfect-strangers.html",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 3
+            },
+            {
+                "amazon_product_url": "https://www.amazon.com/Other-Miss-Bridgerton-Bridgertons-Prequel-ebook/dp/B0716WQCN8?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-24",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Julia Quinn",
+                        "contributor": "by Julia Quinn",
+                        "contributor_note": "",
+                        "description": "Can Captain Andrew James Rokesby win the kidnapped Poppy Bridgerton\u2019s heart during a voyage to Portugal?",
+                        "price": 0,
+                        "primary_isbn10": "0062388215",
+                        "primary_isbn13": "9780062388216",
+                        "publisher": "Avon",
+                        "title": "THE OTHER MISS BRIDGERTON"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Combined Print & E-Book Fiction",
+                "isbns": [
+                    {
+                        "isbn10": "0062388215",
+                        "isbn13": "9780062388216"
+                    },
+                    {
+                        "isbn10": "0062388207",
+                        "isbn13": "9780062388209"
+                    }
+                ],
+                "list_name": "Combined Print and E-Book Fiction",
+                "published_date": "2018-12-09",
+                "rank": 11,
+                "rank_last_week": 0,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 1
+            },
+            {
+                "amazon_product_url": "https://www.amazon.com/Where-Crawdads-Sing-Delia-Owens/dp/0735219095?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-24",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Delia Owens",
+                        "contributor": "by Delia Owens",
+                        "contributor_note": "",
+                        "description": "In a quiet town on the North Carolina coast in 1969, a young woman who survived alone in the marsh becomes a murder suspect.",
+                        "price": 0,
+                        "primary_isbn10": "0735219117",
+                        "primary_isbn13": "9780735219113",
+                        "publisher": "Putnam",
+                        "title": "WHERE THE CRAWDADS SING"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Combined Print & E-Book Fiction",
+                "isbns": [
+                    {
+                        "isbn10": "0735219095",
+                        "isbn13": "9780735219090"
+                    },
+                    {
+                        "isbn10": "0735219117",
+                        "isbn13": "9780735219113"
+                    },
+                    {
+                        "isbn10": "0525640371",
+                        "isbn13": "9780525640370"
+                    }
+                ],
+                "list_name": "Combined Print and E-Book Fiction",
+                "published_date": "2018-12-09",
+                "rank": 12,
+                "rank_last_week": 8,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 11
+            },
+            {
+                "amazon_product_url": "https://www.amazon.com/Elevation-Stephen-King/dp/1982102314?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-24",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Stephen King",
+                        "contributor": "by Stephen King",
+                        "contributor_note": "",
+                        "description": "A man who is losing weight without getting thinner forms an unlikely alliance with his neighbors who are dealing with prejudices.",
+                        "price": 0,
+                        "primary_isbn10": "1982102314",
+                        "primary_isbn13": "9781982102319",
+                        "publisher": "Scribner",
+                        "title": "ELEVATION"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Combined Print & E-Book Fiction",
+                "isbns": [
+                    {
+                        "isbn10": "1982102314",
+                        "isbn13": "9781982102319"
+                    },
+                    {
+                        "isbn10": "1982102330",
+                        "isbn13": "9781982102333"
+                    }
+                ],
+                "list_name": "Combined Print and E-Book Fiction",
+                "published_date": "2018-12-09",
+                "rank": 13,
+                "rank_last_week": 9,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "https://www.nytimes.com/2018/10/26/books/review/stephen-king-elevation.html",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 4
+            },
+            {
+                "amazon_product_url": "https://www.amazon.com/Next-Person-You-Meet-Heaven/dp/006229444X?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-24",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Mitch Albom",
+                        "contributor": "by Mitch Albom",
+                        "contributor_note": "",
+                        "description": "The sequel to \"The Five People You Meet in Heaven\" follows Annie on her heavenly journey.",
+                        "price": 0,
+                        "primary_isbn10": "006229444X",
+                        "primary_isbn13": "9780062294449",
+                        "publisher": "Harper",
+                        "title": "THE NEXT PERSON YOU MEET IN HEAVEN"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Combined Print & E-Book Fiction",
+                "isbns": [
+                    {
+                        "isbn10": "006229444X",
+                        "isbn13": "9780062294449"
+                    },
+                    {
+                        "isbn10": "0062294466",
+                        "isbn13": "9780062294463"
+                    }
+                ],
+                "list_name": "Combined Print and E-Book Fiction",
+                "published_date": "2018-12-09",
+                "rank": 14,
+                "rank_last_week": 11,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 6
+            },
+            {
+                "amazon_product_url": "https://www.amazon.com/Tattooist-Auschwitz-Novel-Heather-Morris/dp/0062797158?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-24",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Heather Morris",
+                        "contributor": "by Heather Morris",
+                        "contributor_note": "",
+                        "description": "A concentration camp detainee tasked with permanently marking fellow prisoners falls in love with one of them.",
+                        "price": 0,
+                        "primary_isbn10": "0062797158",
+                        "primary_isbn13": "9780062797155",
+                        "publisher": "Harper",
+                        "title": "THE TATTOOIST OF AUSCHWITZ"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Combined Print & E-Book Fiction",
+                "isbns": [
+                    {
+                        "isbn10": "0062797158",
+                        "isbn13": "9780062797155"
+                    },
+                    {
+                        "isbn10": "0062797166",
+                        "isbn13": "9780062797162"
+                    },
+                    {
+                        "isbn10": "006287067X",
+                        "isbn13": "9780062870674"
+                    }
+                ],
+                "list_name": "Combined Print and E-Book Fiction",
+                "published_date": "2018-12-09",
+                "rank": 15,
+                "rank_last_week": 10,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "https://www.nytimes.com/2018/11/16/books/review/tattooist-auschwitz-heather-morris.html",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 12
+            }
+        ],
+        "status": "OK"
+    },
+    "https://api.nytimes.com/svc/books/v3/lists.jsonapi-key-e2f12384cb874605bf274292786f601f_list-combined-print-and-e-book-nonfiction": {
+        "copyright": "Copyright (c) 2018 The New York Times Company.  All Rights Reserved.",
+        "last_modified": "2018-11-28T23:38:01-05:00",
+        "num_results": 15,
+        "results": [
+            {
+                "amazon_product_url": "https://www.amazon.com/Becoming-Michelle-Obama/dp/1524763136?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-24",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Michelle Obama",
+                        "contributor": "by Michelle Obama",
+                        "contributor_note": "",
+                        "description": "The former first lady describes her journey from the South Side of Chicago to the White House, and how she balanced work, family and her husband\u2019s political ascent.",
+                        "price": 0,
+                        "primary_isbn10": "1524763136",
+                        "primary_isbn13": "9781524763138",
+                        "publisher": "Crown",
+                        "title": "BECOMING"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Combined Print & E-Book Nonfiction",
+                "isbns": [
+                    {
+                        "isbn10": "1524763136",
+                        "isbn13": "9781524763138"
+                    }
+                ],
+                "list_name": "Combined Print and E-Book Nonfiction",
+                "published_date": "2018-12-09",
+                "rank": 1,
+                "rank_last_week": 1,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 2
+            },
+            {
+                "amazon_product_url": "https://www.amazon.com/Killing-SS-Criminals-History-OReillys/dp/1250165547?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-24",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Bill O'Reilly and Martin Dugard",
+                        "contributor": "by Bill O'Reilly and Martin Dugard",
+                        "contributor_note": "",
+                        "description": "A look at the postwar manhunt for members of Hitler\u2019s inner circle.",
+                        "price": 0,
+                        "primary_isbn10": "1250165547",
+                        "primary_isbn13": "9781250165541",
+                        "publisher": "Holt",
+                        "title": "KILLING THE SS"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Combined Print & E-Book Nonfiction",
+                "isbns": [
+                    {
+                        "isbn10": "1250165547",
+                        "isbn13": "9781250165541"
+                    },
+                    {
+                        "isbn10": "1250165555",
+                        "isbn13": "9781250165558"
+                    },
+                    {
+                        "isbn10": "1427299064",
+                        "isbn13": "9781427299062"
+                    }
+                ],
+                "list_name": "Combined Print and E-Book Nonfiction",
+                "published_date": "2018-12-09",
+                "rank": 2,
+                "rank_last_week": 3,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 7
+            },
+            {
+                "amazon_product_url": "https://www.amazon.com/Educated-Memoir-Tara-Westover/dp/0399590501?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-24",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Tara Westover",
+                        "contributor": "by Tara Westover",
+                        "contributor_note": "",
+                        "description": "The daughter of survivalists, who is kept out of school, educates herself enough to leave home for university.",
+                        "price": 0,
+                        "primary_isbn10": "039959051X",
+                        "primary_isbn13": "9780399590511",
+                        "publisher": "Random House",
+                        "title": "EDUCATED"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Combined Print & E-Book Nonfiction",
+                "isbns": [
+                    {
+                        "isbn10": "0399590501",
+                        "isbn13": "9780399590504"
+                    },
+                    {
+                        "isbn10": "039959051X",
+                        "isbn13": "9780399590511"
+                    },
+                    {
+                        "isbn10": "0525589988",
+                        "isbn13": "9780525589983"
+                    },
+                    {
+                        "isbn10": "0525528059",
+                        "isbn13": "9780525528050"
+                    }
+                ],
+                "list_name": "Combined Print and E-Book Nonfiction",
+                "published_date": "2018-12-09",
+                "rank": 3,
+                "rank_last_week": 2,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "https://www.nytimes.com/2018/03/01/books/review/tara-westover-educated.html",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 40
+            },
+            {
+                "amazon_product_url": "https://www.amazon.com/Ship-Fools-Selfish-Bringing-Revolution/dp/1501183664?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-24",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Tucker Carlson",
+                        "contributor": "by Tucker Carlson",
+                        "contributor_note": "",
+                        "description": "The Fox News anchor argues that America\u2019s ruling class is out of touch with everyday citizens.",
+                        "price": 0,
+                        "primary_isbn10": "1501183664",
+                        "primary_isbn13": "9781501183669",
+                        "publisher": "Free Press",
+                        "title": "SHIP OF FOOLS"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Combined Print & E-Book Nonfiction",
+                "isbns": [
+                    {
+                        "isbn10": "1501183664",
+                        "isbn13": "9781501183669"
+                    },
+                    {
+                        "isbn10": "1501183680",
+                        "isbn13": "9781501183683"
+                    }
+                ],
+                "list_name": "Combined Print and E-Book Nonfiction",
+                "published_date": "2018-12-09",
+                "rank": 4,
+                "rank_last_week": 5,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 8
+            },
+            {
+                "amazon_product_url": "https://www.amazon.com/Factfulness-Reasons-World-Things-Better-ebook/dp/B0756J1LLV?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-24",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Hans Rosling with Ola Rosling and Anna Rosling Ronnlund",
+                        "contributor": "by Hans Rosling with Ola Rosling and Anna Rosling Ronnlund",
+                        "contributor_note": "",
+                        "description": "A look at our biases and the argument for why the world is in a better state than we might think.",
+                        "price": 0,
+                        "primary_isbn10": "125012381X",
+                        "primary_isbn13": "9781250123817",
+                        "publisher": "Flatiron",
+                        "title": "FACTFULNESS"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Combined Print & E-Book Nonfiction",
+                "isbns": [
+                    {
+                        "isbn10": "1250107814",
+                        "isbn13": "9781250107817"
+                    },
+                    {
+                        "isbn10": "125012381X",
+                        "isbn13": "9781250123817"
+                    }
+                ],
+                "list_name": "Combined Print and E-Book Nonfiction",
+                "published_date": "2018-12-09",
+                "rank": 5,
+                "rank_last_week": 0,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 12
+            },
+            {
+                "amazon_product_url": "http://www.amazon.com/Sapiens-A-Brief-History-Humankind-ebook/dp/B00ICN066A?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-24",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Yuval Noah Harari",
+                        "contributor": "by Yuval Noah Harari",
+                        "contributor_note": "",
+                        "description": "How Homo sapiens became Earth\u2019s dominant species.",
+                        "price": 0,
+                        "primary_isbn10": "0062316117",
+                        "primary_isbn13": "9780062316110",
+                        "publisher": "Harper",
+                        "title": "SAPIENS"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Combined Print & E-Book Nonfiction",
+                "isbns": [
+                    {
+                        "isbn10": "0062316095",
+                        "isbn13": "9780062316097"
+                    },
+                    {
+                        "isbn10": "0062316109",
+                        "isbn13": "9780062316103"
+                    },
+                    {
+                        "isbn10": "0062796232",
+                        "isbn13": "9780062796233"
+                    },
+                    {
+                        "isbn10": "1494576902",
+                        "isbn13": "9781494576905"
+                    },
+                    {
+                        "isbn10": "0062316117",
+                        "isbn13": "9780062316110"
+                    },
+                    {
+                        "isbn10": "1494506904",
+                        "isbn13": "9781494506902"
+                    },
+                    {
+                        "isbn10": "1494556901",
+                        "isbn13": "9781494556907"
+                    }
+                ],
+                "list_name": "Combined Print and E-Book Nonfiction",
+                "published_date": "2018-12-09",
+                "rank": 6,
+                "rank_last_week": 6,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 48
+            },
+            {
+                "amazon_product_url": "https://www.amazon.com/Fear-Trump-White-Bob-Woodward-ebook/dp/B075RV48W3?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-24",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Bob Woodward",
+                        "contributor": "by Bob Woodward",
+                        "contributor_note": "",
+                        "description": "Based on hours of interviews with sources, the Pulitzer Prize-winning journalist describes debates and decision-making within the Trump White House.",
+                        "price": 0,
+                        "primary_isbn10": "1501175513",
+                        "primary_isbn13": "9781501175510",
+                        "publisher": "Simon & Schuster",
+                        "title": "FEAR"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Combined Print & E-Book Nonfiction",
+                "isbns": [
+                    {
+                        "isbn10": "1501175513",
+                        "isbn13": "9781501175510"
+                    },
+                    {
+                        "isbn10": "150117553X",
+                        "isbn13": "9781501175534"
+                    },
+                    {
+                        "isbn10": "1508240094",
+                        "isbn13": "9781508240099"
+                    },
+                    {
+                        "isbn10": "1432859684",
+                        "isbn13": "9781432859688"
+                    }
+                ],
+                "list_name": "Combined Print and E-Book Nonfiction",
+                "published_date": "2018-12-09",
+                "rank": 7,
+                "rank_last_week": 4,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 11
+            },
+            {
+                "amazon_product_url": "https://www.amazon.com/Churchill-Walking-Destiny-Andrew-Roberts/dp/1101980990?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-24",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Andrew Roberts",
+                        "contributor": "by Andrew Roberts",
+                        "contributor_note": "",
+                        "description": "A biography focusing on what motivated the war leader and how he learned from his mistakes.",
+                        "price": 0,
+                        "primary_isbn10": "1101980990",
+                        "primary_isbn13": "9781101980996",
+                        "publisher": "Viking",
+                        "title": "CHURCHILL: WALKING WITH DESTINY"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Combined Print & E-Book Nonfiction",
+                "isbns": [
+                    {
+                        "isbn10": "1101980990",
+                        "isbn13": "9781101980996"
+                    },
+                    {
+                        "isbn10": "1101981016",
+                        "isbn13": "9781101981016"
+                    }
+                ],
+                "list_name": "Combined Print and E-Book Nonfiction",
+                "published_date": "2018-12-09",
+                "rank": 8,
+                "rank_last_week": 0,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "https://www.nytimes.com/2018/11/13/books/review/andrew-roberts-churchill-winston-biography.html",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 1
+            },
+            {
+                "amazon_product_url": "https://www.amazon.com/Leadership-Turbulent-Doris-Kearns-Goodwin/dp/1476795924?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-24",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Doris Kearns Goodwin",
+                        "contributor": "by Doris Kearns Goodwin",
+                        "contributor_note": "",
+                        "description": "The challenges that shaped the leadership abilities of four presidents: Abraham Lincoln, Theodore Roosevelt, Franklin D. Roosevelt and Lyndon B. Johnson.",
+                        "price": 0,
+                        "primary_isbn10": "1476795924",
+                        "primary_isbn13": "9781476795928",
+                        "publisher": "Simon & Schuster",
+                        "title": "LEADERSHIP"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Combined Print & E-Book Nonfiction",
+                "isbns": [
+                    {
+                        "isbn10": "1476795924",
+                        "isbn13": "9781476795928"
+                    },
+                    {
+                        "isbn10": "1476795940",
+                        "isbn13": "9781476795942"
+                    },
+                    {
+                        "isbn10": "1432853821",
+                        "isbn13": "9781432853822"
+                    }
+                ],
+                "list_name": "Combined Print and E-Book Nonfiction",
+                "published_date": "2018-12-09",
+                "rank": 9,
+                "rank_last_week": 9,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "https://www.nytimes.com/2018/09/14/books/review/doris-kearns-goodwin-leadership.html",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 10
+            },
+            {
+                "amazon_product_url": "https://www.amazon.com/Pieces-Sally-Field/dp/1538763028?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-24",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Sally Field",
+                        "contributor": "by Sally Field",
+                        "contributor_note": "",
+                        "description": "A memoir by the two-time Academy Award and three-time Emmy Award winner.",
+                        "price": 0,
+                        "primary_isbn10": "1538763028",
+                        "primary_isbn13": "9781538763025",
+                        "publisher": "Grand Central",
+                        "title": "IN PIECES"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Combined Print & E-Book Nonfiction",
+                "isbns": [
+                    {
+                        "isbn10": "None",
+                        "isbn13": "9780143177289"
+                    },
+                    {
+                        "isbn10": "1538763028",
+                        "isbn13": "9781538763025"
+                    },
+                    {
+                        "isbn10": "1538714698",
+                        "isbn13": "9781538714690"
+                    },
+                    {
+                        "isbn10": "1538763044",
+                        "isbn13": "9781538763049"
+                    },
+                    {
+                        "isbn10": "1549143085",
+                        "isbn13": "9781549143083"
+                    },
+                    {
+                        "isbn10": "1549143077",
+                        "isbn13": "9781549143076"
+                    },
+                    {
+                        "isbn10": "1549145444",
+                        "isbn13": "9781549145445"
+                    },
+                    {
+                        "isbn10": "1471175790",
+                        "isbn13": "9781471175794"
+                    }
+                ],
+                "list_name": "Combined Print and E-Book Nonfiction",
+                "published_date": "2018-12-09",
+                "rank": 10,
+                "rank_last_week": 0,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 9
+            },
+            {
+                "amazon_product_url": "https://www.amazon.com/Shade-Tale-Presidents-Pete-Souza/dp/0316421820?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-24",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Pete Souza",
+                        "contributor": "by Pete Souza",
+                        "contributor_note": "",
+                        "description": "The former White House photographer juxtaposes pictures of former President Obama with tweets, headlines and quotes from the Trump administration.",
+                        "price": 0,
+                        "primary_isbn10": "0316421820",
+                        "primary_isbn13": "9780316421829",
+                        "publisher": "Little, Brown",
+                        "title": "SHADE"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Combined Print & E-Book Nonfiction",
+                "isbns": [
+                    {
+                        "isbn10": "0316421820",
+                        "isbn13": "9780316421829"
+                    },
+                    {
+                        "isbn10": "0316421839",
+                        "isbn13": "9780316421836"
+                    },
+                    {
+                        "isbn10": "0316455040",
+                        "isbn13": "9780316455046"
+                    }
+                ],
+                "list_name": "Combined Print and E-Book Nonfiction",
+                "published_date": "2018-12-09",
+                "rank": 11,
+                "rank_last_week": 0,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 4
+            },
+            {
+                "amazon_product_url": "https://www.amazon.com/Fifth-Risk-Michael-Lewis/dp/1324002646?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-24",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Michael Lewis",
+                        "contributor": "by Michael Lewis",
+                        "contributor_note": "",
+                        "description": "The author of \"The Big Short\" examines how the Trump administration staffs its federal agencies.",
+                        "price": 0,
+                        "primary_isbn10": "1324002646",
+                        "primary_isbn13": "9781324002642",
+                        "publisher": "Norton",
+                        "title": "THE FIFTH RISK"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Combined Print & E-Book Nonfiction",
+                "isbns": [
+                    {
+                        "isbn10": "1324002646",
+                        "isbn13": "9781324002642"
+                    },
+                    {
+                        "isbn10": "1324002654",
+                        "isbn13": "9781324002659"
+                    }
+                ],
+                "list_name": "Combined Print and E-Book Nonfiction",
+                "published_date": "2018-12-09",
+                "rank": 12,
+                "rank_last_week": 11,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "https://www.nytimes.com/2018/10/08/books/review/michael-lewis-fifth-risk.html",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 8
+            },
+            {
+                "amazon_product_url": "https://www.amazon.com/Library-Book-Susan-Orlean/dp/1476740186?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-24",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Susan Orlean",
+                        "contributor": "by Susan Orlean",
+                        "contributor_note": "",
+                        "description": "The story of the 1986 fire at the Los Angeles Public Library provides a backdrop to the evolution and purpose of libraries.",
+                        "price": 0,
+                        "primary_isbn10": "1476740186",
+                        "primary_isbn13": "9781476740188",
+                        "publisher": "Simon & Schuster",
+                        "title": "THE LIBRARY BOOK"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Combined Print & E-Book Nonfiction",
+                "isbns": [
+                    {
+                        "isbn10": "1476740186",
+                        "isbn13": "9781476740188"
+                    },
+                    {
+                        "isbn10": "1432856464",
+                        "isbn13": "9781432856465"
+                    },
+                    {
+                        "isbn10": "1476740208",
+                        "isbn13": "9781476740201"
+                    }
+                ],
+                "list_name": "Combined Print and E-Book Nonfiction",
+                "published_date": "2018-12-09",
+                "rank": 13,
+                "rank_last_week": 13,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "https://www.nytimes.com/2018/10/15/books/review/susan-orlean-library-book.html",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 4
+            },
+            {
+                "amazon_product_url": "https://www.amazon.com/Brief-Answers-Questions-Stephen-Hawking/dp/1984819194?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-24",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Stephen Hawking",
+                        "contributor": "by Stephen Hawking",
+                        "contributor_note": "",
+                        "description": "A collection of essays from the late scientist\u2019s personal archive that address 10 imponderables.",
+                        "price": 0,
+                        "primary_isbn10": "1984819194",
+                        "primary_isbn13": "9781984819192",
+                        "publisher": "Bantam",
+                        "title": "BRIEF ANSWERS TO THE BIG QUESTIONS"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Combined Print & E-Book Nonfiction",
+                "isbns": [
+                    {
+                        "isbn10": "1984819194",
+                        "isbn13": "9781984819192"
+                    },
+                    {
+                        "isbn10": "1984819208",
+                        "isbn13": "9781984819208"
+                    }
+                ],
+                "list_name": "Combined Print and E-Book Nonfiction",
+                "published_date": "2018-12-09",
+                "rank": 14,
+                "rank_last_week": 10,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 6
+            },
+            {
+                "amazon_product_url": "https://www.amazon.com/Beastie-Boys-Book-Michael-Diamond/dp/0812995546?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-24",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Michael Diamond and Adam Horovitz",
+                        "contributor": "by Michael Diamond and Adam Horovitz",
+                        "contributor_note": "",
+                        "description": "The story of the New York band who went from performing hardcore punk music to hip hop stardom.",
+                        "price": 0,
+                        "primary_isbn10": "0812995546",
+                        "primary_isbn13": "9780812995541",
+                        "publisher": "Spiegel & Grau",
+                        "title": "BEASTIE BOYS BOOK"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Combined Print & E-Book Nonfiction",
+                "isbns": [
+                    {
+                        "isbn10": "0812995546",
+                        "isbn13": "9780812995541"
+                    },
+                    {
+                        "isbn10": "0812995554",
+                        "isbn13": "9780812995558"
+                    }
+                ],
+                "list_name": "Combined Print and E-Book Nonfiction",
+                "published_date": "2018-12-09",
+                "rank": 15,
+                "rank_last_week": 12,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "https://www.nytimes.com/2018/11/30/books/review/beastie-boys-book-michael-diamond-adam-horovitz.html",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 4
+            }
+        ],
+        "status": "OK"
+    },
+    "https://api.nytimes.com/svc/books/v3/lists.jsonapi-key-e2f12384cb874605bf274292786f601f_list-science": {
+        "copyright": "Copyright (c) 2018 The New York Times Company.  All Rights Reserved.",
+        "last_modified": "2018-11-08T12:38:02-05:00",
+        "num_results": 10,
+        "results": [
+            {
+                "amazon_product_url": "https://www.amazon.com/Brief-Answers-Questions-Stephen-Hawking/dp/1984819194?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-03",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Stephen Hawking",
+                        "contributor": "by Stephen Hawking",
+                        "contributor_note": "",
+                        "description": "A collection of essays from the late scientist\u2019s personal archive that address 10 imponderables.",
+                        "price": 0,
+                        "primary_isbn10": "1984819194",
+                        "primary_isbn13": "9781984819192",
+                        "publisher": "Bantam",
+                        "title": "BRIEF ANSWERS TO THE BIG QUESTIONS"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Science",
+                "isbns": [
+                    {
+                        "isbn10": "1984819194",
+                        "isbn13": "9781984819192"
+                    },
+                    {
+                        "isbn10": "1984819208",
+                        "isbn13": "9781984819208"
+                    }
+                ],
+                "list_name": "Science",
+                "published_date": "2018-11-18",
+                "rank": 1,
+                "rank_last_week": 0,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 0
+            },
+            {
+                "amazon_product_url": "http://www.amazon.com/Sapiens-A-Brief-History-Humankind-ebook/dp/B00ICN066A?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-03",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Yuval Noah Harari",
+                        "contributor": "by Yuval Noah Harari",
+                        "contributor_note": "",
+                        "description": "How Homo sapiens became Earth\u2019s dominant species.",
+                        "price": 0,
+                        "primary_isbn10": "0062316117",
+                        "primary_isbn13": "9780062316110",
+                        "publisher": "Harper",
+                        "title": "SAPIENS"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Science",
+                "isbns": [
+                    {
+                        "isbn10": "0062316095",
+                        "isbn13": "9780062316097"
+                    },
+                    {
+                        "isbn10": "0062316109",
+                        "isbn13": "9780062316103"
+                    },
+                    {
+                        "isbn10": "0062796232",
+                        "isbn13": "9780062796233"
+                    },
+                    {
+                        "isbn10": "1494576902",
+                        "isbn13": "9781494576905"
+                    },
+                    {
+                        "isbn10": "0062316117",
+                        "isbn13": "9780062316110"
+                    },
+                    {
+                        "isbn10": "1494506904",
+                        "isbn13": "9781494506902"
+                    },
+                    {
+                        "isbn10": "1494556901",
+                        "isbn13": "9781494556907"
+                    }
+                ],
+                "list_name": "Science",
+                "published_date": "2018-11-18",
+                "rank": 2,
+                "rank_last_week": 1,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 0
+            },
+            {
+                "amazon_product_url": "https://www.amazon.com/Astrophysics-People-Hurry-deGrasse-Tyson/dp/0393609391?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-03",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Neil deGrasse Tyson",
+                        "contributor": "by Neil deGrasse Tyson",
+                        "contributor_note": "",
+                        "description": "A straightforward, easy-to-understand introduction to the universe.",
+                        "price": 0,
+                        "primary_isbn10": "0393609391",
+                        "primary_isbn13": "9780393609394",
+                        "publisher": "Norton",
+                        "title": "ASTROPHYSICS FOR PEOPLE IN A HURRY"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Science",
+                "isbns": [
+                    {
+                        "isbn10": "0393609391",
+                        "isbn13": "9780393609394"
+                    },
+                    {
+                        "isbn10": "0393609405",
+                        "isbn13": "9780393609400"
+                    },
+                    {
+                        "isbn10": "1432843524",
+                        "isbn13": "9781432843526"
+                    },
+                    {
+                        "isbn10": "1538408015",
+                        "isbn13": "9781538408018"
+                    },
+                    {
+                        "isbn10": "1538408007",
+                        "isbn13": "9781538408001"
+                    },
+                    {
+                        "isbn10": "1538408031",
+                        "isbn13": "9781538408032"
+                    },
+                    {
+                        "isbn10": "1538408023",
+                        "isbn13": "9781538408025"
+                    }
+                ],
+                "list_name": "Science",
+                "published_date": "2018-11-18",
+                "rank": 3,
+                "rank_last_week": 3,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 0
+            },
+            {
+                "amazon_product_url": "https://www.amazon.com/Lessons-21st-Century-Yuval-Harari/dp/0525512179?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-03",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Yuval Noah Harari",
+                        "contributor": "by Yuval Noah Harari",
+                        "contributor_note": "",
+                        "description": "Technological, political and social issues in the modern era, and the choices individuals might consider in facing them. Read by Derek Perkins.11 hours, 41 minutes unabridged.",
+                        "price": 0,
+                        "primary_isbn10": "0525512179",
+                        "primary_isbn13": "9780525512172",
+                        "publisher": "Spiegel & Grau",
+                        "title": "21 LESSONS FOR THE 21ST CENTURY"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Science",
+                "isbns": [
+                    {
+                        "isbn10": "0525512179",
+                        "isbn13": "9780525512172"
+                    },
+                    {
+                        "isbn10": "0525512187",
+                        "isbn13": "9780525512189"
+                    },
+                    {
+                        "isbn10": "0525639853",
+                        "isbn13": "9780525639855"
+                    }
+                ],
+                "list_name": "Science",
+                "published_date": "2018-11-18",
+                "rank": 4,
+                "rank_last_week": 2,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "https://www.nytimes.com/2018/09/04/books/review/21-lessons-for-the-21st-century-yuval-noah-harari.html",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 0
+            },
+            {
+                "amazon_product_url": "https://www.amazon.com/Leonardo-Vinci-Walter-Isaacson/dp/1501139150?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-03",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Walter Isaacson",
+                        "contributor": "by Walter Isaacson",
+                        "contributor_note": "",
+                        "description": "A biography of the Italian Renaissance polymath that connects his work in various disciplines.",
+                        "price": 0,
+                        "primary_isbn10": "1501139169",
+                        "primary_isbn13": "9781501139161",
+                        "publisher": "Simon & Schuster",
+                        "title": "LEONARDO DA VINCI"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Science",
+                "isbns": [
+                    {
+                        "isbn10": "1501139150",
+                        "isbn13": "9781501139154"
+                    },
+                    {
+                        "isbn10": "1501139177",
+                        "isbn13": "9781501139178"
+                    },
+                    {
+                        "isbn10": "1508241988",
+                        "isbn13": "9781508241980"
+                    },
+                    {
+                        "isbn10": "1501139169",
+                        "isbn13": "9781501139161"
+                    },
+                    {
+                        "isbn10": "1947783734",
+                        "isbn13": "9781947783737"
+                    },
+                    {
+                        "isbn10": "1471166775",
+                        "isbn13": "9781471166778"
+                    }
+                ],
+                "list_name": "Science",
+                "published_date": "2018-11-18",
+                "rank": 5,
+                "rank_last_week": 0,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "https://www.nytimes.com/2017/11/27/books/review/leonardo-da-vinci-biography-walter-isaacson.html",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 0
+            },
+            {
+                "amazon_product_url": "http://www.amazon.com/The-Body-Keeps-Score-Healing/dp/0670785938?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-03",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Bessel van der Kolk",
+                        "contributor": "by Bessel van der Kolk",
+                        "contributor_note": "",
+                        "description": "How trauma affects the body and mind, and innovative treatments for recovery.",
+                        "price": 0,
+                        "primary_isbn10": "0143127748",
+                        "primary_isbn13": "9780143127741",
+                        "publisher": "Penguin",
+                        "title": "THE BODY KEEPS THE SCORE"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Science",
+                "isbns": [
+                    {
+                        "isbn10": "0670785938",
+                        "isbn13": "9780670785933"
+                    },
+                    {
+                        "isbn10": "0143127748",
+                        "isbn13": "9780143127741"
+                    }
+                ],
+                "list_name": "Science",
+                "published_date": "2018-11-18",
+                "rank": 6,
+                "rank_last_week": 0,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 0
+            },
+            {
+                "amazon_product_url": "https://www.amazon.com/Accessory-War-Unspoken-Alliance-Astrophysics/dp/0393064441?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-03",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Neil deGrasse Tyson and Avis Lang",
+                        "contributor": "by Neil deGrasse Tyson and Avis Lang",
+                        "contributor_note": "",
+                        "description": "Observations of the two-way relationship between science and military power. 18 hours, 38 minutes unabridged. Read by Courtney B. Vance and Neil deGrasse Tyson.",
+                        "price": 0,
+                        "primary_isbn10": "0393064441",
+                        "primary_isbn13": "9780393064445",
+                        "publisher": "Norton",
+                        "title": "ACCESSORY TO WAR"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Science",
+                "isbns": [
+                    {
+                        "isbn10": "0393064441",
+                        "isbn13": "9780393064445"
+                    },
+                    {
+                        "isbn10": "039328543X",
+                        "isbn13": "9780393285437"
+                    },
+                    {
+                        "isbn10": "1984833987",
+                        "isbn13": "9781984833983"
+                    }
+                ],
+                "list_name": "Science",
+                "published_date": "2018-11-18",
+                "rank": 7,
+                "rank_last_week": 4,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "https://www.nytimes.com/2018/11/12/books/review/neil-degrasse-tyson-accessory-to-war-avis-lang.html",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 0
+            },
+            {
+                "amazon_product_url": "https://www.amazon.com/Sawbones-Book-Hilarious-Horrifying-Medicine/dp/1681883813?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-03",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Sydnee McElroy and Justin McElroy",
+                        "contributor": "by Sydnee McElroy and Justin McElroy",
+                        "contributor_note": "",
+                        "description": "",
+                        "price": 0,
+                        "primary_isbn10": "1681883813",
+                        "primary_isbn13": "9781681883816",
+                        "publisher": "Weldon Owen",
+                        "title": "THE SAWBONES BOOK"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Science",
+                "isbns": [
+                    {
+                        "isbn10": "1681883813",
+                        "isbn13": "9781681883816"
+                    }
+                ],
+                "list_name": "Science",
+                "published_date": "2018-11-18",
+                "rank": 8,
+                "rank_last_week": 0,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 0
+            },
+            {
+                "amazon_product_url": "http://www.amazon.com/Being-Mortal-Medicine-What-Matters/dp/0805095152?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-03",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Atul Gawande",
+                        "contributor": "by Atul Gawande",
+                        "contributor_note": "",
+                        "description": "The surgeon and New Yorker writer considers how doctors fail patients at the end of life, and how they can do better.",
+                        "price": 0,
+                        "primary_isbn10": "1250076226",
+                        "primary_isbn13": "9781250076229",
+                        "publisher": "Picador",
+                        "title": "BEING MORTAL"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Science",
+                "isbns": [
+                    {
+                        "isbn10": "0805095152",
+                        "isbn13": "9780805095159"
+                    },
+                    {
+                        "isbn10": "1427244235",
+                        "isbn13": "9781427244239"
+                    },
+                    {
+                        "isbn10": "1410478122",
+                        "isbn13": "9781410478122"
+                    },
+                    {
+                        "isbn10": "1514732998",
+                        "isbn13": "9781514732991"
+                    },
+                    {
+                        "isbn10": "1250081246",
+                        "isbn13": "9781250081247"
+                    },
+                    {
+                        "isbn10": "1250076226",
+                        "isbn13": "9781250076229"
+                    },
+                    {
+                        "isbn10": "1594139245",
+                        "isbn13": "9781594139246"
+                    },
+                    {
+                        "isbn10": "1427244243",
+                        "isbn13": "9781427244246"
+                    }
+                ],
+                "list_name": "Science",
+                "published_date": "2018-11-18",
+                "rank": 9,
+                "rank_last_week": 8,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "https://www.nytimes.com/2014/10/17/arts/being-mortal-by-atul-gawande.html",
+                        "first_chapter_link": "",
+                        "sunday_review_link": "https://www.nytimes.com/2014/11/09/books/review/atul-gawande-being-mortal-review.html"
+                    }
+                ],
+                "weeks_on_list": 0
+            },
+            {
+                "amazon_product_url": "https://www.amazon.com/Change-Your-Mind-Consciousness-Transcendence/dp/1594204225?tag=NYTBS-20",
+                "asterisk": 0,
+                "bestsellers_date": "2018-11-03",
+                "book_details": [
+                    {
+                        "age_group": "",
+                        "author": "Michael Pollan",
+                        "contributor": "by Michael Pollan",
+                        "contributor_note": "",
+                        "description": "A personal account of how psychedelics might help the mentally ill and people dealing with everyday challenges. 13 hours, 34 minutes unabridged. Read by the author.",
+                        "price": 0,
+                        "primary_isbn10": "1594204225",
+                        "primary_isbn13": "9781594204227",
+                        "publisher": "Penguin Press",
+                        "title": "HOW TO CHANGE YOUR MIND"
+                    }
+                ],
+                "dagger": 0,
+                "display_name": "Science",
+                "isbns": [
+                    {
+                        "isbn10": "1594204225",
+                        "isbn13": "9781594204227"
+                    },
+                    {
+                        "isbn10": "0525558942",
+                        "isbn13": "9780525558941"
+                    },
+                    {
+                        "isbn10": "0525627162",
+                        "isbn13": "9780525627166"
+                    },
+                    {
+                        "isbn10": "0525627154",
+                        "isbn13": "9780525627159"
+                    },
+                    {
+                        "isbn10": "0525631941",
+                        "isbn13": "9780525631941"
+                    }
+                ],
+                "list_name": "Science",
+                "published_date": "2018-11-18",
+                "rank": 10,
+                "rank_last_week": 6,
+                "reviews": [
+                    {
+                        "article_chapter_link": "",
+                        "book_review_link": "https://www.nytimes.com/2018/06/04/books/review/michael-pollan-how-to-change-your-mind.html",
+                        "first_chapter_link": "",
+                        "sunday_review_link": ""
+                    }
+                ],
+                "weeks_on_list": 0
+            }
+        ],
+        "status": "OK"
+    }
+}
