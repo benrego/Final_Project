@@ -1,0 +1,14 @@
+
+Commands available:
+
+best_seller
+
+	Description: Search different New York Times best seller lists for books.
+
+	First Prompt: ('What list would you like to see? (fiction, non-fiction, science):')
+
+		fiction: shows fiction best seller list
+
+		non-fiction: shows non-fiction best seller list
+
+		science: shows science best seller list

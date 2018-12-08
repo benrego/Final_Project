@@ -1,0 +1,17 @@
+
+Commands available:
+
+reading_list
+	Description: Lists the books on your reading list. Will return a list showing
+	book title, author, and average rating.
+
+	Second Prompt: pick up a book(#) or chart ratings('chart')
+
+	#
+	Description: selecting a book number from the above list returns that book
+	as an object with the options available under book_object above.
+
+	chart
+	Description: typing chart will create a pie chart showing the percentage of
+	books on your reading list across different average ratings (rounded to the
+	tens decimal place)

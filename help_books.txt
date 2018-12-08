@@ -1,0 +1,19 @@
+
+Commands available:
+
+books
+	Description: Lists books that match the specified parameters. Will return a
+	list showing book title, author, and the sorting parameter specified.
+
+	Options:
+		* search parameter
+		Description: Input a string that you want to match in the database with
+		books which contain that string in the book title.
+
+		* avg_rating|ratings_count|review_count [default: avg_rating]
+		Description: Specifies whether to sort by average rating, number of
+		ratings, or number of reviews.
+
+		* <limit> [default: 10]
+		Description: Specifies the number of records you want to be visible from
+		that search. Will always sort in descending order.

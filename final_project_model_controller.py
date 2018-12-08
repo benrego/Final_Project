@@ -64,7 +64,7 @@ class Book():
         elif sql != None:
             self.init_from_sql(sql)
         elif json != None:
-            self.init_from_json(json)
+            self.init_from_json(json, bs)
         elif bs != None:
             self.init_from_bs(bs)
 
@@ -102,6 +102,23 @@ class Book():
         data = [trace0]
         layout = go.Layout(
             title = "Distribution of ratings for "+self.title,
+            xaxis=dict(
+                title='Rating Given',
+                    titlefont=dict(
+                    family='Courier New, monospace',
+                    size=18,
+                    color='#7f7f7f'
+        )
+        ),
+         yaxis=dict(
+        title='Number of Ratings',
+        titlefont=dict(
+            family='Courier New, monospace',
+            size=18,
+            color='#7f7f7f'
+        )
+    )
+
         )
         fig = go.Figure(data=data, layout=layout)
         return py.plot(fig, filename='basic-bar')
@@ -112,8 +129,12 @@ class Book():
         params: self
         return: Updates the new cache and saves it.
         '''
+        for item in READING_LIST:
+            if item['title'] == self.__dict__['title']:
+                print(self.__dict__['title'] + ' is already on your reading list.')
+                return None
         READING_LIST.append(self.__dict__)
-        print(self.title + ' added to your reading list.')
+        print('\n',self.title + ' added to your reading list.\n')
         dumped_json_cache = json.dumps(READING_LIST)
         fw = open(READING_CACHE,"w")
         fw.write(dumped_json_cache)
@@ -129,7 +150,7 @@ class Book():
     #     fw.close()
 
 
-    def init_from_json(self, json):
+    def init_from_json(self, json, bs):
         self.isbn = json['isbn']
         self.author = json['author']
         self.publication_year = json['publication_year']
@@ -139,10 +160,16 @@ class Book():
         self.num_reviews = json['num_reviews']
         self.ratings = json['ratings']
         self.description = json['description']
-        self.bs = None
+        self.bs = bs
+        if self.bs == None:
+            self.rank = None
+            self.rank_time = None
+        else:
+            self.rank = json['rank']
+            self.rank_time = json['rank_time']
 
     def init_from_bs(self, bs):
-        self.bs = 'Best Seller'
+        self.bs = bs
         self.isbn = 'No ISBN on record.'
         self.author = bs[3]
         self.publication_year = str(today)[:4]
@@ -253,8 +280,8 @@ def params_unique_combination(baseurl, params_diction = {}, private_keys=["api_k
     return baseurl + "_".join(res)
 
 
-def load_help_text():
-    with open('help.txt') as f:
+def load_help_text(name):
+    with open(name) as f:
         return f.read()
 
 
@@ -541,7 +568,10 @@ def show_reading_list():
     '''
     tup_for_print = []
     for item in READING_LIST:
-        tup_for_print.append((item['title'],item['author'],item['avg_rating']))
+        if item['avg_rating'] == 0:
+            tup_for_print.append((item['title'],item['author'],'NA'))
+        else:
+            tup_for_print.append((item['title'],item['author'],item['avg_rating']))
     row_num = 0
     table_spacing = [0,0,0]
     param_strings = []
@@ -614,6 +644,43 @@ def plot_reading_list():
     fig = go.Figure(data=[trace],layout=layout)
     return py.plot(fig, filename='basic_pie_chart')
 
+
+def plot_reading_line():
+    '''
+    plots a reading line chart of books and years
+    params: none
+    return: line chart
+    '''
+    pub_year_list = []
+    for item in READING_LIST:
+        pub_year_list.append((item['title'],int(item['publication_year'])))
+    pub_year_list = sorted(pub_year_list, key = lambda x:x[1])
+    year_list = []
+    title_list = []
+    for item in pub_year_list:
+        title_list.append(item[0])
+        year_list.append(item[1])
+
+    quantity_list = []
+    acc = 0
+    for item in pub_year_list:
+        acc +=1
+        quantity_list.append(acc)
+
+    trace1 = go.Scatter(
+        x=year_list,
+        y=quantity_list,
+        fill='tozeroy',
+        mode= 'none',
+        text = title_list,
+        hoverinfo = 'text'
+    )
+    layout = go.Layout(
+        title = "Reading list accumulation by publication year",
+    )
+    data = [trace1]
+    fig = go.Figure(data=data,layout=layout)
+    return py.plot(fig, filename='basic-area-no-bound')
 
 
 # if __name__ == '__main__':

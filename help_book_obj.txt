@@ -1,0 +1,22 @@
+
+* After various searches, you can select a book from the search results by entering the number the book is on the list.
+
+Secondary Prompt: "pick up a book (#): "
+Description: Input the number for information and commands available on that
+book.
+
+	plot
+	Description: plots a histogram of the quantity of ratings that the book
+	received across the different rating categories.
+
+	description
+	Description: returns a description of the book.
+
+	add
+	Description: adds the selected book to your reading list.
+
+	remove
+	Description: removes the selected book to your reading list.
+
+	back
+	Description: returns to the previous menu.

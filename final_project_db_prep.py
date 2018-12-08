@@ -167,7 +167,7 @@ def insert_stuff_book(name):
     conn = sqlite3.connect("final_proj_db.sqlite")
     cur = conn.cursor()
     for obs in list_of_lists[1:]:
-        print(len(obs),obs)
+        # print(len(obs),obs)
         insertion = (obs[0],obs[1],obs[2],obs[3],obs[4],obs[5],obs[6],obs[7],obs[8],obs[9],obs[10],obs[11],obs[12],obs[13],obs[14],obs[15],obs[16],obs[17],obs[18],obs[19],obs[20],obs[21],obs[22])
         statement = 'INSERT INTO "Books"'
         statement += 'VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)'
@@ -184,7 +184,7 @@ def gather_author_names():
     start = "SELECT * FROM Books"
     order_by = " ORDER BY 'ratings_count'"
     statement = start+order_by
-    print(statement)
+    # print(statement)
     cur.execute(statement)
     tup_list = cur.fetchall()
     conn.commit()
@@ -408,14 +408,15 @@ def update_bestseller_authorid():
 ###############################################################################
 ####################### INITIALIZING DATABASE AND TABLES ######################
 ###############################################################################
-# init_db_books()
-# insert_stuff_book("books.csv")
-# init_db_authors()
-# insert_author_db('authors_full.csv')
-# init_db_best_seller()
-# insert_best_seller('best_seller.json')
-# update_booksdb_authorid()
-# update_bestseller_authorid()
+if __name__ == '__main__':
+    init_db_books()
+    insert_stuff_book("books.csv")
+    init_db_authors()
+    insert_author_db('authors_full.csv')
+    init_db_best_seller()
+    insert_best_seller('best_seller.json')
+    update_booksdb_authorid()
+    update_bestseller_authorid()
 
 
 
