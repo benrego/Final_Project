@@ -1,5 +1,4 @@
 import sqlite3
-from requests_oauthlib import OAuth1
 import json
 from datetime import date
 import requests
@@ -10,6 +9,8 @@ import csv
 import re
 import plotly.plotly as py
 import plotly.graph_objs as go
+#plotly.tools.set_credentials_file(username=plotly_username, api_key=plotly_key)
+
 
 
 today = date.today()
@@ -23,9 +24,9 @@ access_secret = secret_data.ACCESS_SECRET
 
 
 
-url = 'https://api.twitter.com/1.1/account/verify_credentials.json'
-auth = OAuth1(consumer_key, consumer_secret, access_token, access_secret)
-requests.get(url, auth=auth).text
+# url = 'https://api.twitter.com/1.1/account/verify_credentials.json'
+# auth = OAuth1(consumer_key, consumer_secret, access_token, access_secret)
+# requests.get(url, auth=auth).text
 
 
 
