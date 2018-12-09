@@ -110,15 +110,44 @@ The code is structured in 4 files:
 
 Important functions and classes:
 
-Book
+Class Book():
+One of the two classes in this program is the Book class, which represents an individual book with a title, author, published year, average rating, ratings distribution, etc. Each book object has a few noteworthy methods:
+
+plot_ratings will plot a histogram of the distribution of ratings given to the book (1-5)
+
+add_to_list will add the book object to a cached reading list that can then be accessed through the reading_list command in the interactive prompt.
+
+the string method changes depending on if the book came from the Books table or from the Best Seller table.
+
+Class Author():
+The other class in the program is the Author class, which represents an author that was present in one of the books from the books.csv. These instances contain information about the author like their name, gender, age, howntown, the number of works attributed to them, their number of followers, and a description about them.
+
+Function search_book_database():
+'''
+database search for books
+Params: book search term, author search term, sort type, number or results
+Return: list of tuples with title, author, and average rating
+'''
+The search book database function will search the book table for information about books. Detailed above, it can take three kinds of parameters, a search parameter, a sorting parameters, and a limit parameter. If a sorting parameter or limit parameter are not specified, the program will use defaults. The list of tuples returned from the database will given numbers and printed out in a numbered list for the viewer to see. The numbers given to each book will correspond to their index in the list minus one, so that when, in the interactive prompt, the user inputs a number, the program will be able to retrieve the correct entry. The function returns a list of tuples.
 
 
-Author
+Function show_reading_list():
+'''
+displays your reading list (Num, Title, Author, Avg Rating)
+params: none
+return: list of dictionaries for the books that had been stored in json, would need to be reconstructed into objects if you want to use objects again
+'''
+This function takes no inputs, it just prints an organized list of the books on your reading list (stored in a cache). It returns a list of dictionaries (each dictionary corresponding to a book), which can be reconstructed into book objects when they are specified by the interactive prompt.
 
 
+Function plot_reading_list():
+'''
+plots a pie chart of ratings on reading list
+params: none
+return: pie chart
+'''
+This function takes no inputs and creates a visualization in plotly that will organize the books on your reading list into segments of a pie chart corresponding to the rounded value of their average rating.
 
-
-Brief description of how your code is structured, including the names of significant data processing functions (just the 2-3 most important functions--not a complete list) and class definitions. If there are large data structures (e.g., lists, dictionaries) that you create to organize your data for presentation, briefly describe them.
 
 Data Sources:
 
