@@ -10,6 +10,8 @@ import re
 import plotly.plotly as py
 import plotly.graph_objs as go
 import final_project_model_controller as functions
+
+############ UNCOMMENT THIS LIKE TO SET YOUR CREDENTIALS IN PLOTLY ############
 #plotly.tools.set_credentials_file(username=plotly_username, api_key=plotly_key)
 
 

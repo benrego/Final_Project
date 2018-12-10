@@ -9,6 +9,8 @@ import csv
 import re
 import plotly.plotly as py
 import plotly.graph_objs as go
+
+############ UNCOMMENT THIS LIKE TO SET YOUR CREDENTIALS IN PLOTLY ############
 #plotly.tools.set_credentials_file(username=plotly_username, api_key=plotly_key)
 
 
@@ -17,16 +19,10 @@ today = date.today()
 db_name = 'final_proj_db.sqlite'
 
 
-consumer_key = secret_data.CONSUMER_KEY
-consumer_secret = secret_data.CONSUMER_SECRET
-access_token = secret_data.ACCESS_KEY
-access_secret = secret_data.ACCESS_SECRET
-
-
-
-# url = 'https://api.twitter.com/1.1/account/verify_credentials.json'
-# auth = OAuth1(consumer_key, consumer_secret, access_token, access_secret)
-# requests.get(url, auth=auth).text
+# consumer_key = secret_data.CONSUMER_KEY
+# consumer_secret = secret_data.CONSUMER_SECRET
+# access_token = secret_data.ACCESS_KEY
+# access_secret = secret_data.ACCESS_SECRET
 
 
 
@@ -69,17 +65,7 @@ class Book():
         elif bs != None:
             self.init_from_bs(bs)
 
-    def init_from_sql(self, sql):
-        self.isbn = sql[5]
-        self.author = sql[24]
-        self.publication_year = sql[8]
-        self.title = sql[10]
-        self.avg_rating = sql[12]
-        self.num_ratings = sql[13]
-        self.num_reviews = sql[15]
-        self.ratings = [sql[16],sql[17],sql[18],sql[19],sql[20]]
-        self.description = 'No desc yet.'
-        self.bs = None
+
 
 
     def __str__(self):
@@ -87,7 +73,6 @@ class Book():
             return "Title: {}\nAuthor: {}\nPublication Year: {}\nReviewed {} times with an average rating of {}.\n".format(self.title, self.author, self.publication_year, str(self.num_reviews), self.avg_rating)
         else:
             return "Title: {}\nAuthor: {}\nPublication Year: {}\nNumber {} on the best seller list and has been on the list for {} full weeks.\n".format(self.title, self.author, self.publication_year, str(self.rank), self.rank_time)
-
 
     def plot_ratings(self):
         '''
@@ -119,7 +104,6 @@ class Book():
             color='#7f7f7f'
         )
     )
-
         )
         fig = go.Figure(data=data, layout=layout)
         return py.plot(fig, filename='basic-bar')
@@ -140,16 +124,6 @@ class Book():
         fw = open(READING_CACHE,"w")
         fw.write(dumped_json_cache)
         fw.close()
-
-    # def remove_from_list(self):
-    #     list_spot = READING_LIST.index(self)
-    #     READING_LIST.pop(list_spot)
-    #     print(self.title + ' removed from your reading list.')
-    #     dumped_json_cache = json.dumps(READING_LIST)
-    #     fw = open(READING_CACHE,"w")
-    #     fw.write(dumped_json_cache)
-    #     fw.close()
-
 
     def init_from_json(self, json, bs):
         self.isbn = json['isbn']
@@ -183,6 +157,18 @@ class Book():
         self.ratings = 'No ratings on record.'
         self.description = bs[4]
 
+    def init_from_sql(self, sql):
+        self.isbn = sql[5]
+        self.author = sql[24]
+        self.publication_year = sql[8]
+        self.title = sql[10]
+        self.avg_rating = sql[12]
+        self.num_ratings = sql[13]
+        self.num_reviews = sql[15]
+        self.ratings = [sql[16],sql[17],sql[18],sql[19],sql[20]]
+        self.description = 'No desc yet.'
+        self.bs = None
+
     # def init_from_xml(self, xml):
     #     self.title = xml.find('title').text
     #     self.author = xml.find('name').text
@@ -214,6 +200,9 @@ class Author():
             self.born = born
             self.died = died
             self.xml = xml
+
+    def __str__(self):
+        return "Author: {}\nGender: {}\nAge: {}\nHometown: {}\nNumber of Publications: {}\nNumber of Followers: {}\n".format(self.name, self.gender, self.age, self.hometown, self.works_count, self.followers)
 
     def init_from_sql(self,sql):
         self.name = sql[1]
@@ -250,24 +239,6 @@ class Author():
     #     self.died = xml.find('died_at').text
     #     self.xml = xml
 
-    def __str__(self):
-        return "Author: {}\nGender: {}\nAge: {}\nHometown: {}\nNumber of Publications: {}\nNumber of Followers: {}\n".format(self.name, self.gender, self.age, self.hometown, self.works_count, self.followers)
-
-# def amazon_request(baseurl):
-#     unique_ident = params_unique_combination(baseurl)
-#     if unique_ident in CACHE_DICTION:
-#         print("Getting cached data...")
-#         return CACHE_DICTION[unique_ident]
-#     else:
-#         print("Making a request for new data...")
-#         header = {'User-Agent': 'University_class'}
-#         page_text = requests.get(baseurl, headers=header).text
-#         CACHE_DICTION[unique_ident] = page_text
-#         dumped_json_cache = json.dumps(CACHE_DICTION)
-#         fw = open(CACHE_FNAME,"w")
-#         fw.write(dumped_json_cache)
-#         fw.close()
-#         return CACHE_DICTION[unique_ident]
 
 
 
@@ -328,44 +299,7 @@ def get_from_nyt_best_seller(type):
     #     book_list.append(new_book)
     # return book_list
 
-# def isbn_from_bslist():
-#     bs_to_gr = []
-#     for item in CACHE_DICTION.keys():
-#         for i in CACHE_DICTION[item]['results']:
-#             bs_to_gr.append(i['isbns'][0]['isbn10'])
-#     return bs_to_gr
-#
-# def get_book_info_from_bs(isbn_list):
-#     '''
-#     API request to Goodreads for review of a book
-#     Params: takes the book title and the author
-#     Returns: tuple of the book title and the description
-#     '''
-#     for isbn in isbn_list:
-#         baseurl = "https://www.goodreads.com/search/index.xml"
-#         params_diction = {}
-#         params_diction['q'] = isbn
-#         # params_diction['search[field]'] = 'title'
-#         params_diction["key"] = secret_data.goodreads_key
-#         unique_ident = params_unique_combination(baseurl,params_diction)
-#         # print("Making a request for new data...")
-#         goodreads_resp = requests.get(baseurl, params = params_diction
-#         )
-#         goodreads_text = goodreads_resp.text
-#         search_soup = BeautifulSoup(goodreads_text, "xml")
-#         return search_soup
-#         title_search = search_soup.find('title').text
-#         # print(title_search)
-#         review_search = search_soup.find('description').text
-#         open_carot = 0
-#         while open_carot != -1:
-#             open_carot = review_search.find("<")
-#             close_carot = review_search.find(">")
-#             review_search = review_search[:open_carot]+review_search[close_carot+1:]
-#         return (title_search,review_search)
-#
-# isbns = ['152479628X', '0316273945']
-# print(get_book_info_from_bs(isbns))
+
 
 def get_book_description(title,author):
     '''
@@ -396,6 +330,7 @@ def get_book_description(title,author):
 
 # print(get_book_description("Dune","Frank Herbert"))
 
+
 def author_db_search(author_name):
     conn = sqlite3.connect(db_name)
     cur = conn.cursor()
@@ -416,6 +351,7 @@ def author_db_search(author_name):
         print_list.append(acc + author[1])
         print(*print_list, sep=' ')
     return tup_list
+
 
 def best_seller_db_search(bs_list):
     conn = sqlite3.connect(db_name)
@@ -619,6 +555,7 @@ def remove_from_list(number):
     fw.close()
     return None
 
+
 def plot_reading_list():
     '''
     plots a pie chart of ratings on reading list
@@ -715,195 +652,3 @@ def plot_reading_line():
     # get_from_nyt_best_seller('combined-print-and-e-book-fiction')
     # get_from_nyt_best_seller('combined-print-and-e-book-nonfiction')
     # get_from_nyt_best_seller('science')
-
-
-
-
-# print(plot_reading_list())
-
-# def goodreads_title_search(search_request, type = "isbn"):
-#     baseurl = "https://www.goodreads.com/search/index.xml"
-#     params_diction = {}
-#     params_diction["q"] = search_request
-#     params_diction["key"] = secret_data.goodreads_key
-#     params_diction["search[field]"] = type
-#     unique_ident = params_unique_combination(baseurl,params_diction)
-#     if unique_ident in CACHE_DICTION:
-#         print("Getting cached data...")
-#         print(unique_ident)
-#         search_results =  CACHE_DICTION[unique_ident]
-#         search_soup = BeautifulSoup(search_results, "xml")
-#         book_search = search_soup.find_all('work')
-#         book_list = []
-#         for book in book_search:
-#             new_book = Book(xml = book)
-#             book_list.append(new_book)
-#         sorted_list = sorted(book_list, key = lambda book:book.review_count , reverse = True)
-#         print('\nSearch for {}:\n'.format(search_request))
-#         for book in sorted_list:
-#             print('{} - Rated {} times with an average rating of {}.'.format(book.title, str(book.ratings_count), book.rating))
-#         return None
-#     else:
-#         print("Making a request for new data...")
-#         goodreads_resp = requests.get(baseurl, params = params_diction
-#         # auth = auth
-#         )
-#         goodreads_text = goodreads_resp.text
-#         print(unique_ident)
-#         CACHE_DICTION[unique_ident] = goodreads_text
-#         dumped_json_cache = json.dumps(CACHE_DICTION, sort_keys=True,indent=4,separators=(',',': '))
-#         fw = open(CACHE_FNAME,"w")
-#         fw.write(dumped_json_cache)
-#         fw.close()
-#         search_results =  CACHE_DICTION[unique_ident]
-#         search_soup = BeautifulSoup(search_results, "xml")
-#         book_search = search_soup.find_all('work')
-#         book_list = []
-#         for book in book_search:
-#             new_book = Book(xml = book)
-#             book_list.append(new_book)
-#         sorted_list = sorted(book_list, key = lambda book:book.review_count , reverse = True)
-#         print('\nSearch for {}:\n'.format(search_request))
-#         for book in sorted_list:
-#             print('{} - Rated {} times with an average rating of {}.'.format(book.title, str(book.ratings_count), book.rating))
-#         return None
-#
-# def goodreads_author_search(search_request, type = "author"):
-#     baseurl = "https://www.goodreads.com/search/index.xml"
-#     params_diction = {}
-#     params_diction["q"] = search_request
-#     params_diction["key"] = secret_data.goodreads_key
-#     params_diction["search[field]"] = type
-#     unique_ident = params_unique_combination(baseurl,params_diction)
-#     if unique_ident in CACHE_DICTION:
-#         print("Getting cached data...")
-#         # print(CACHE_DICTION[unique_ident])
-#         search_results =  CACHE_DICTION[unique_ident]
-#         search_soup = BeautifulSoup(search_results, "xml")
-#         book_search = search_soup.find_all('work')
-#         print(book_search[0])
-#         book_list = []
-#         for book in book_search:
-#             new_book = Book(xml = book)
-#             book_list.append(new_book)
-#         sorted_list = sorted(book_list, key = lambda book:book.review_count, reverse = True)
-#         print('\nSearch for {}:\n'.format(search_request))
-#         for book in sorted_list:
-#             print('{} - Rated {} times with an average rating of {}.'.format(book.title, str(book.ratings_count), book.rating))
-#         return None
-#     else:
-#         print("Making a request for new data...")
-#         goodreads_resp = requests.get(baseurl, params = params_diction
-#         # auth = auth
-#         )
-#         goodreads_text = goodreads_resp.text
-#         CACHE_DICTION[unique_ident] = goodreads_text
-#         dumped_json_cache = json.dumps(CACHE_DICTION, sort_keys=True,indent=4,separators=(',',': '))
-#         fw = open(CACHE_FNAME,"w")
-#         fw.write(dumped_json_cache)
-#         fw.close()
-#         search_results = CACHE_DICTION[unique_ident]
-#         search_soup = BeautifulSoup(search_results, "xml")
-#         book_search = search_soup.find_all('work')
-#         book_list = []
-#         for book in book_search:
-#             new_book = Book(xml = book)
-#             book_list.append(new_book)
-#         sorted_list = sorted(book_list, key = lambda book:book.review_count, reverse = True)
-#         print('\nSearch for {}:\n'.format(search_request))
-#         for book in sorted_list:
-#             print('{} - Rated {} times with an average rating of {}.'.format(book.title, str(book.ratings_count), book.rating))
-#         return None
-#
-# def goodreads_review_search(id):
-#     baseurl = "https://www.goodreads.com/book/show.json"
-#     params_diction = {}
-#     params_diction["id"] = id
-#     params_diction["key"] = secret_data.goodreads_key
-#     #params_diction["rating"] = rating
-#     unique_ident = params_unique_combination(baseurl,params_diction)
-#     if unique_ident in CACHE_DICTION:
-#         print("Getting cached data...")
-#         # print(CACHE_DICTION[unique_ident])
-#         return CACHE_DICTION[unique_ident]
-#     else:
-#         print("Making a request for new data...")
-#         nyt_resp = requests.get(baseurl, params = params_diction
-#         # auth = auth
-#         )
-#         nyt_text = nyt_resp.text
-#         nyt_data_obj = json.loads(nyt_text)
-#         CACHE_DICTION[unique_ident] = nyt_data_obj
-#         # dumped_json_cache = json.dumps(CACHE_DICTION)
-#         dumped_json_cache = json.dumps(CACHE_DICTION, sort_keys=True,indent=4,separators=(',',': '))
-#         # print(dumped_json_cache)
-#         fw = open(CACHE_FNAME,"w")
-#         fw.write(dumped_json_cache)
-#         fw.close()
-#         return CACHE_DICTION[unique_ident]
-
-    # if unique_ident in CACHE_DICTION:
-    #     print("Getting cached data...")
-    #     search_results = CACHE_DICTION[unique_ident]
-    #     search_soup = BeautifulSoup(search_results, "xml")
-    #     return search_soup
-    # else:
-    #     print("Making a request for new data...")
-    #     goodreads_resp = requests.get(baseurl, params = params_diction
-    #     # auth = auth
-    #     )
-    #     goodreads_text = goodreads_resp.text
-    #     CACHE_DICTION[unique_ident] = goodreads_text
-    #     dumped_json_cache = json.dumps(CACHE_DICTION, sort_keys=True,indent=4,separators=(',',': '))
-    #     fw = open(CACHE_FNAME,"w")
-    #     fw.write(dumped_json_cache)
-    #     fw.close()
-    #     search_results = CACHE_DICTION[unique_ident]
-    #     search_soup = BeautifulSoup(search_results, "xml")
-    #     return search_soup
-
-
-
-
-
-# enders_search = goodreads_author_search("Terry Pratchett")
-# book_search = enders_search.find_all('work')
-# print(book_search[0])
-#
-# book_list = []
-# for book in book_search:
-#     new_book = Book(xml = book)
-#     book_list.append(new_book)
-# sorted_list = sorted(book_list, key = lambda book:book.review_count , reverse = True)
-# for book in sorted_list:
-#     print(book.__str__())
-
-
-
-
-## Additional Functions
-
-# Add book shelf
-    # add the To-Read shelf
-# Add a book to a shelf
-    # can also remove
-# Get the books on a members shelf
-
-
-# Google Books
-# https://developers.google.com/books/docs/v1/getting_started
-    # REST in the Books API
-
-    # https://www.programmableweb.com/api/google-books/sample-source-code
-    # book information, ratings, reviews
-
-# Barnes and Nobles API
-    # price
-    # https://www.programmableweb.com/api/abundant-barnes-noble-price
-
-# use the books.csv
-    # (Pie) graph the proportion of books from genres (with 4 or 5 stars)
-        # would need to find genre from some API (Goodreads or Google Books)
-    # (Bar) graph the quantities of books with each review type
-    # (Scatter) graph correlation between number of reviews and average rating
-    # get the NY Times best sellers, and chart title, reviews, ratings

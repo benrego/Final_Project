@@ -1,7 +1,6 @@
 import sqlite3
 import sys
 import csv
-from requests_oauthlib import OAuth1
 import json
 from datetime import date
 import time
@@ -398,6 +397,8 @@ def update_bestseller_authorid():
 ###############################################################################
 ################### GETTING AUTHO DATA FROM GOODREADS TO CSV ##################
 ###############################################################################
+# This code takes the author names from the book entries in the books.csv and passes them through two Goodreads API queries to get the information that eventually populated the authors table in the database. Running this code as a block will exceed the max API hits, so I had to run it in chunks over the course of a week.
+
 # full_author_list = []
 # author_name_list = gather_author_names() # 3888 authors
 # author_ids = search_author_by_name(author_name_list,full_author_list)
@@ -417,50 +418,3 @@ if __name__ == '__main__':
     insert_best_seller('best_seller.json')
     update_booksdb_authorid()
     update_bestseller_authorid()
-
-
-
-
-
-
-
-
-# def update_bean_ids():
-#     conn = sqlite3.connect("Proj3_db.sqlite")
-#     cur = conn.cursor()
-#
-#     statement = "SELECT Id, EnglishName FROM Countries"
-#     cur.execute(statement)
-#     tup_list = cur.fetchall()
-#
-#     country_dict = {}
-#     for tup in tup_list:
-#         country_dict[tup[1]] = tup[0]
-#     country_dict['Unknown'] = 'Unknown'
-#     for country in country_dict.keys():
-#         company_id = country_dict[country]
-#         cur.execute("UPDATE Bars SET CompanyLocationId = ? WHERE CompanyLocation= ?", (company_id, country))
-#         cur.execute("UPDATE Bars SET BroadBeanOriginId = ? WHERE BroadBeanOrigin= ?", (company_id, country))
-#     conn.commit()
-#     conn.close()
-#     return None
-
-
-# if len(sys.argv) >1 and sys.argv[1] == '--init':
-#     if sys.argv[2] == 'books':
-#         print('Deleting books table and starting over from scratch.')
-#         init_db_books()
-#     elif sys.argv[2] == 'authors':
-#         print('Deleting authors table and starting over from scratch.')
-#         init_db_authors()
-# elif len(sys.argv) >1 and sys.argv[1] == 'update' and sys.argv[2] == 'books':
-#     print('Updating books table.')
-#     insert_stuff_book('books.csv')
-# elif len(sys.argv) >1 and sys.argv[1] == 'update' and sys.argv[2] == 'authors':
-#     print('Updating authors table.')
-#     insert_author_db('authors.csv')
-# elif len(sys.argv) >1 and sys.argv[1] == 'update' and sys.argv[2] == 'ids':
-#     print('Updating author ids in Books table.')
-#     update_booksdb_authorid()
-# else:
-#     print('Leaving the database alone.')
