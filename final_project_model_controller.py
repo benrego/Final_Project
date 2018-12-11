@@ -70,9 +70,9 @@ class Book():
 
     def __str__(self):
         if self.bs == None:
-            return "Title: {}\nAuthor: {}\nPublication Year: {}\nReviewed {} times with an average rating of {}.\n".format(self.title, self.author, self.publication_year, str(self.num_reviews), self.avg_rating)
+            return "\nTitle: {}\nAuthor: {}\nPublication Year: {}\nReviewed {} times with an average rating of {}.\n".format(self.title, self.author, self.publication_year, str(self.num_reviews), self.avg_rating)
         else:
-            return "Title: {}\nAuthor: {}\nPublication Year: {}\nNumber {} on the best seller list and has been on the list for {} full weeks.\n".format(self.title, self.author, self.publication_year, str(self.rank), self.rank_time)
+            return "\nTitle: {}\nAuthor: {}\nPublication Year: {}\nNumber {} on the best seller list and has been on the list for {} full weeks.\n".format(self.title, self.author, self.publication_year, str(self.rank), self.rank_time)
 
     def plot_ratings(self):
         '''
@@ -202,7 +202,7 @@ class Author():
             self.xml = xml
 
     def __str__(self):
-        return "Author: {}\nGender: {}\nAge: {}\nHometown: {}\nNumber of Publications: {}\nNumber of Followers: {}\n".format(self.name, self.gender, self.age, self.hometown, self.works_count, self.followers)
+        return "\nAuthor: {}\nGender: {}\nAge: {}\nHometown: {}\nNumber of Publications: {}\nNumber of Followers: {}\n".format(self.name, self.gender, self.age, self.hometown, self.works_count, self.followers)
 
     def init_from_sql(self,sql):
         self.name = sql[1]
@@ -341,7 +341,7 @@ def author_db_search(author_name):
     tup_list = cur.fetchall()
     acc = 0
     book_place_dict = {}
-    header = 'Author Search'
+    header = '\nAuthor Search:'
     print(header)
     for author in tup_list:
         acc = int(acc)
@@ -350,6 +350,7 @@ def author_db_search(author_name):
         print_list = []
         print_list.append(acc + author[1])
         print(*print_list, sep=' ')
+    print('\n')
     return tup_list
 
 
@@ -482,6 +483,7 @@ def search_book_database(book='', author='',sort='avg_rating',top='10'):
 
     acc = 0
     book_place_dict = {}
+    print('\nBook Search:')
     for tup in tup_for_print:
         acc = int(acc)
         acc+=1
@@ -547,13 +549,18 @@ def remove_from_list(number):
     params: requres the number on the list of the book you want to remove
     return: None
     '''
-    book_popped = READING_LIST.pop(int(number)-1)
-    print(book_popped['title'] + ' removed from your reading list.')
-    dumped_json_cache = json.dumps(READING_LIST)
-    fw = open(READING_CACHE,"w")
-    fw.write(dumped_json_cache)
-    fw.close()
-    return None
+    try:
+        book_popped = READING_LIST.pop(int(number)-1)
+        print('\n')
+        print(book_popped['title'] + ' removed from your reading list.\n')
+        dumped_json_cache = json.dumps(READING_LIST)
+        fw = open(READING_CACHE,"w")
+        fw.write(dumped_json_cache)
+        fw.close()
+        return None
+    except:
+        print("\nThat book isn't on your reading list.")
+        return None
 
 
 def plot_reading_list():
@@ -596,7 +603,7 @@ def plot_reading_line():
     year_list = []
     title_list = []
     for item in pub_year_list:
-        title_list.append(item[0])
+        title_list.append(item[0]+', '+str(item[1]))
         year_list.append(item[1])
 
     quantity_list = []

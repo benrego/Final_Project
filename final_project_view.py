@@ -18,7 +18,7 @@ import final_project_model_controller as functions
 def start_game():
     user_input = ''
     while user_input != 'exit':
-        user_input = input("Input Command:\n\t'books' for books database\n\t'authors' to search for an author\n\t'best_seller' to look at best seller list\n\t'reading_list' to view your reading list\n\t'help <COMMAND>' or 'help book_obj' to get search instructions\n\t'exit' to exit the program: ").lower()
+        user_input = input("\nInput Command:\n\t'books' for books database\n\t'authors' to search for an author\n\t'best_seller' to look at best seller list\n\t'reading_list' to view your reading list\n\t'help <COMMAND>' or 'help book_obj' to get search instructions\n\t'exit' to exit the program: ").lower()
         if user_input.split()[0] == 'help':
             if user_input.split()[1] == 'books':
                 help_books = functions.load_help_text('help_books.txt')
@@ -62,34 +62,48 @@ def start_game():
             book_tuple_response = functions.search_book_database(book = search_param, sort = sort_param, top = num_param)
             if len(book_tuple_response) == 0:
                 print("\nNo books match that search.\n")
-            else:
+            book_flag = ''
+            while book_flag != 'next':
                 book_input = input("pick up a book: ")
-                book_sql = book_tuple_response[int(book_input)-1]
-                book_obj = functions.Book(sql = book_sql)
-                print(book_obj)
-                second_book_input = ''
-                while second_book_input != 'back':
-                    second_book_input = input("plot, description, add, remove ('back' to return to original menu): ")
-                    if second_book_input == 'plot':
-                        book_obj.plot_ratings()
-                    elif second_book_input == 'description':
-                        book_d = functions.get_book_description(book_obj.title,book_obj.author)
-                        print("Description for ",book_d[0])
-                        print(book_d[1])
-                    elif second_book_input == 'add':
-                        book_obj.add_to_list()
-                    elif second_book_input == 'remove':
-                        functions.remove_from_list(int(book_obj))
+                try:
+                    book_sql = book_tuple_response[int(book_input)-1]
+                    book_obj = functions.Book(sql = book_sql)
+                    print(book_obj)
+                    book_flag = 'next'
+                except:
+                    print('\nNot a valid command.\n')
+            second_book_input = ''
+            while second_book_input != 'back':
+                second_book_input = input("plot, description, add ('back' to return to original menu): ")
+                if second_book_input == 'plot':
+                    book_obj.plot_ratings()
+                elif second_book_input == 'description':
+                    book_d = functions.get_book_description(book_obj.title,book_obj.author)
+                    print("\nDescription for ",book_d[0])
+                    print(book_d[1])
+                    print('\n')
+                elif second_book_input == 'add':
+                    book_obj.add_to_list()
+                # elif second_book_input == 'remove':
+                #     functions.remove_from_list(int(book_obj))
+                elif second_book_input == 'back':
+                    continue
+                else:
+                    print('\nNot a valid command.\n')
             user_input = ''
         elif user_input == 'authors':
             books_or_info = ''
             while books_or_info != 'back':
-                author_search = input("Search for an author by name: ")
+                author_search = input("\nSearch for an author by name ('back' to return to original menu) : ")
+                if author_search == 'back':
+                    break
                 author_tuples = functions.author_db_search(author_search)
                 if len(author_tuples) == 0:
-                    print('No authors matched that search.')
+                    print('\nNo authors matched that search.\n')
                 else:
-                    author_select = input("Select an Author: ")
+                    author_select = input("Select an Author ('back' to return to original menu) : ")
+                    if author_select == 'back':
+                        break
                     books_or_info = input("Would you like info about the author ('info') or about books ('books') they have written? ('back' to return to original menu) : ")
                     #(book='', author='',sort='avg_rating',top='10')
                     if books_or_info == 'info':
@@ -97,13 +111,14 @@ def start_game():
                         author_obj = functions.Author(sql = author_sql)
                         print(author_obj)
                         more_info = input("Would you like more info ('yes') about "+author_obj.name+"? ('no' or 'back' to return to original menu): ")
+                        if more_info == 'back' or more_info == 'no':
+                            break
                         if 'y' in more_info.lower():
                             print(author_obj.about)
                             books_or_info = 'back'
                             user_input = ''
                         else:
-                            books_or_info = 'back'
-                            user_input = ''
+                            print('\nNot a valid command.\n')
                     elif books_or_info.split()[0] == 'books':
                         search_param = author_tuples[int(author_select)-1][1]
                         book_split = books_or_info.split()
@@ -125,54 +140,66 @@ def start_game():
                             # else:
                             #     acc+=1
                             #     search_param += item
-                        print(search_param)
+                        #print(search_param)
                         author_tuple_response = functions.search_book_database(author = search_param, sort = sort_param, top = num_param)
                         if len(author_tuple_response) == 0:
                             print('No search results for that author\'s name.')
                             user_input = ''
                         else:
                             book_input = input("pick up a book: ")
-                            book_sql = author_tuple_response[int(book_input)-1]
-                            book_obj = functions.Book(sql = book_sql)
-                            print(book_obj)
-                            second_book_input = ''
-                            while second_book_input != 'back':
-                                second_book_input = input("plot, description, add, remove ('back' to original menu): ")
-                                if second_book_input == 'plot':
-                                    book_obj.plot_ratings()
-                                elif second_book_input == 'description':
-                                    book_d = functions.get_book_description(book_obj.title,book_obj.author)
-                                    print("Description for ",book_d[0])
-                                    print(book_d[1])
-                                elif second_book_input == 'add':
-                                    book_obj.add_to_list()
-                                elif second_book_input == 'remove':
-                                    functions.remove_from_list(int(book_obj))
-                            books_or_info = 'back'
-                            user_input = ''
+                            try:
+                                book_sql = author_tuple_response[int(book_input)-1]
+                                book_obj = functions.Book(sql = book_sql)
+                                print(book_obj)
+                                second_book_input = ''
+                                while second_book_input != 'back':
+                                    second_book_input = input("plot, description, add, remove ('back' to original menu): ")
+                                    if second_book_input == 'plot':
+                                        book_obj.plot_ratings()
+                                    elif second_book_input == 'description':
+                                        book_d = functions.get_book_description(book_obj.title,book_obj.author)
+                                        print("Description for ",book_d[0])
+                                        print(book_d[1])
+                                    elif second_book_input == 'add':
+                                        book_obj.add_to_list()
+                                    elif second_book_input == 'remove':
+                                        functions.remove_from_list(int(book_obj))
+                                books_or_info = 'back'
+                                user_input = ''
+                            except:
+                                print('\nNot a valid input.')
+                                break
+                    else:
+                        print('\nNot a valid command. Search for author again.\n')
         elif user_input == 'best_seller':
-            bs_input = input("What list would you like to see? (fiction, non-fiction, science):")
-            bs_list = functions.best_seller_db_search(bs_input)
-            bs_book_input = input("pick up a book (#) ('back' to return to original menu): ")
-            if bs_book_input == 'back':
+            bs_flag = ''
+            while bs_flag != 'start':
+                bs_input = input("What list would you like to see? (fiction, non-fiction, science) ('back' to return to original menu):")
+                bs_list = functions.best_seller_db_search(bs_input)
+                if len(bs_list) == 35:
+                    print("\nNo list of that name.")
+                    break
+                bs_book_input = input("pick up a book (#) ('back' to return to original menu): ")
+                if bs_book_input == 'back':
+                    user_input = ''
+                else:
+                    book_dict_form = bs_list[int(bs_book_input)-1]
+                    book_obj = functions.Book(bs = book_dict_form)
+                    print(book_obj)
+                    second_book_input = ''
+                    while second_book_input != 'back':
+                        second_book_input = input("plot, description, add ('back' to return to search options): ")
+                        if second_book_input == 'plot':
+                            print("No plot available for this book.")
+                        elif second_book_input == 'description':
+                            print("Description for ",book_obj.title)
+                            print(book_obj.description)
+                        elif second_book_input == 'add':
+                            book_obj.add_to_list()
+                        # elif second_book_input == 'remove':
+                        #     print(READING_LIST)
+                        #     functions.remove_from_list(int(bs_book_input))
                 user_input = ''
-            else:
-                book_dict_form = bs_list[int(bs_book_input)-1]
-                book_obj = functions.Book(bs = book_dict_form)
-                print(book_obj)
-                second_book_input = ''
-                while second_book_input != 'back':
-                    second_book_input = input("plot, description, add, remove ('back' to return to original menu): ")
-                    if second_book_input == 'plot':
-                        print("No plot available for this book.")
-                    elif second_book_input == 'description':
-                        print("Description for ",book_obj.title)
-                        print(book_obj.description)
-                    elif second_book_input == 'add':
-                        book_obj.add_to_list()
-                    elif second_book_input == 'remove':
-                        functions.remove_from_list(int(book_input))
-            user_input = ''
         elif user_input == 'reading_list':
             book_input = ''
             while book_input != 'back':
@@ -184,7 +211,7 @@ def start_game():
                     functions.plot_reading_list()
                 elif book_input == 'line':
                     functions.plot_reading_line()
-                else:
+                elif int(book_input) in range(1,len(functions.READING_LIST)+1):
                     book_dict_form = reading_list[int(book_input)-1]
                     if book_dict_form['bs'] == None:
                         book_obj = functions.Book(json = book_dict_form, bs = None)
@@ -193,9 +220,9 @@ def start_game():
                     print('\n',book_obj)
                     second_book_input = ''
                     while second_book_input != 'list':
-                        second_book_input = input("plot, description, add, remove, list ('back' to return to original menu): ")
+                        second_book_input = input("plot, description, add, remove, ('back' to previous menu): ")
                         if second_book_input == 'back':
-                            user_input = ''
+                            break
                         elif second_book_input == 'plot':
                             if book_obj.bs == None:
                                 book_obj.plot_ratings()
@@ -210,6 +237,8 @@ def start_game():
                             book_obj.add_to_list()
                         elif second_book_input == 'remove':
                             functions.remove_from_list(int(book_input))
+                else:
+                    print("\nThat is not a valid entry.\n")
             user_input = ''
         elif user_input == 'exit':
             print('exiting...')
