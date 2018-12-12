@@ -2,8 +2,11 @@ Brief user Guide:
 
 This program creates a database of books, authors, and best sellers and allows the user to query the database, construct a reading list, and get different visualizations of the books and lists they are looking at.
 
+The 'reading_list.json' cache and the 'final_proj_db.sqlite' are NOT required to be in the working directory to run the file. However, the reading list is helpful to have in the working directory when running the test file, as it will open the visualizations in plotly related to the reading list. Otherwise, the graph in plotly will be blank.
+
 To create a new version of the database, run the 'final_proj_db_prep.py' file.
 To start the interactive prompt, run the 'final_project_view.py' file.
+
 
 When running the code, you will see the following prompt. Below, you will see explanations for how to navigate through each of the command menus.
 
@@ -93,8 +96,11 @@ reading_list
 	books on your reading list across different average ratings (rounded to the
 	tens decimal place)
 
-  line
-  Description: typing chart will create a aggregated line chart showing the quantity of books on your reading list across over time based on their publication year
+	line
+  Description: typing chart will create a aggregated line chart showing the
+	quantity of books on your reading list across over time based on their
+	publication year
+
 
 
 
